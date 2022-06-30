@@ -1,0 +1,43 @@
+import  PostHeading from '../Components/PostHeading'
+import { PostIngredients } from '../Components/PostIngredients'
+import { Potware } from '../Components/Potware'
+import { Cooktime } from '../Components/Cooktime'
+import { Instructions } from '../Components/Instructions'
+
+
+ 
+ return (
+    <>
+    <PostHeading 
+    title=""
+    image={}
+    description=""
+    />
+    <div className="flex-col w-full second-row">
+         <PostIngredients 
+            ingredients={[
+
+            ]} 
+             />
+
+         <Potware 
+            potware={[
+                
+            ]}
+          />
+          <Cooktime 
+            cooktime=""
+            servingsize=""
+            />
+  </div>
+  <Instructions 
+    instructions={[
+     
+
+    ]}
+  />
+
+
+    </>
+
+    )

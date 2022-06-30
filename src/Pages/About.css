@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerofcontainer {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: solid red 1px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f3f4;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.curry {
+}
+.food {
+  flex: 33%;
+  height: 100%;
+}
+
+.food_images {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.me {
+  display: inline-block;
+  max-height: 435px;
+  max-width: 250px;
+  width: 33%;
+  flex: 50%;
+}
+
+.ramen {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  margin: 0.6em 2em 0.5em 2em;
+  border-radius: 10em;
+}
+
+.second {
+  width: 100%;
+}
+.text {
+  flex: 50%;
+  margin: 2.5em;
+  font-family: "Mukta", sans-serif;
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 950px) {
+  .container img {
+    justify-self: center;
+    align-self: center;
+    width: 50%;
+    height: 50%;
+  }
+  .container {
+    margin: 0;
+  }
+  .food_images {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .containerofcontainer {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}

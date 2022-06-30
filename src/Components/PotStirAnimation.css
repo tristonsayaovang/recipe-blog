@@ -1,0 +1,62 @@
+.animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: 0;
+  opacity: 0;
+  z-index: -2;
+  animation: loadIn 3.1s linear;
+}
+#spoon {
+  animation: stir 1.5s linear;
+  animation-iteration-count: 2;
+}
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes loadIn {
+  from {
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+    z-index: 100;
+  }
+  90% {
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+    z-index: 99;
+  }
+  99% {
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.1;
+    z-index: 100%;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes stir {
+  from {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(-92px, 0px);
+  }
+  50% {
+    transform: translate(-92px, -15px);
+  }
+  75% {
+    transform: translate(15px, -15px);
+  }
+
+  to {
+    transform: translate(0px, 0px);
+  }
+}

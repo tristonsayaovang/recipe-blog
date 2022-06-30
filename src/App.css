@@ -1,0 +1,78 @@
+body {
+  min-width: 600px;
+}
+
+.cooking-with-triston {
+  font-family: Mukta, sans-serif;
+}
+
+.footer {
+  margin-top: 3em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.home-latest {
+  background: #f5f3f4;
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.gallery_heading {
+  position: absolute;
+  color: white;
+  z-index: 20;
+  top: 10%;
+  left: 5%;
+  font-size: 3rem;
+  font-family: "Playball", cursive;
+  animation-duration: 1.3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.gallery_image {
+  display: block;
+  width: 100vw;
+  min-width: 600px;
+  height: relative;
+  filter: sepia(10%) saturate(120%) brightness(60%);
+}
+
+.slide {
+  opacity: 0.5;
+}
+
+.slide.active {
+  opacity: 1;
+  animation-name: flip;
+  animation-duration: 0.8s;
+}
+
+@keyframes flip {
+  from {
+    width: 100%;
+    transform: translate(50px, 100%);
+  }
+  to {
+    width: 100%;
+    transform: translate(0);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .gallery_heading {
+    font-size: 1.8rem;
+  }
+}

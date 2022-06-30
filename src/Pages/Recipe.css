@@ -1,0 +1,198 @@
+h1 {
+  font-size: 24px;
+  margin-bottom: 2em;
+  font-family: sans-serif, serif;
+  font-weight: bold;
+}
+
+.recipe {
+  margin: 1em;
+  width: 200px;
+  height: 200px;
+}
+
+.recipe:hover {
+  transform: scale(1.06);
+}
+
+.recipe:hover .recipe-img {
+  filter: sepia(20%) saturate(120%) brightness(40%);
+  z-index: 0;
+  box-shadow: 10px 5px 5px #f5f3f4;
+}
+
+.recipe:hover .recipe-title {
+  color: white;
+}
+
+.recipe-img {
+  z-index: 2;
+  border-radius: 0.25rem;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.recipe-img:hover {
+  filter: sepia(20%) saturate(120%) brightness(40%);
+  z-index: 0;
+}
+
+.recipe-list {
+  margin-left: 8%;
+  animation: chonk 3.3s linear;
+}
+
+@keyframes chonk {
+  from {
+    opacity: 0;
+    overflow-y: hidden;
+  }
+  92% {
+    opacity: 0;
+    overflow-y: hidden;
+  }
+
+  99% {
+    opacity: 0.5;
+    overflow-y: hidden;
+  }
+  to {
+    opacity: 1;
+    overflow-y: auto;
+  }
+}
+.recipe-title {
+  z-index: 1;
+  position: absolute;
+  color: transparent;
+  font-size: 15px;
+}
+
+.recipe-title:hover ~ .recipe-img {
+  filter: sepia(20%) saturate(120%) brightness(40%);
+  z-index: 0;
+}
+
+.search {
+  display: flex;
+  flex-flow: column wrap;
+}
+.search-input {
+  margin: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchInputs {
+  margin: 1em;
+  display: flex;
+}
+.searchInputs {
+  margin-top: 105px;
+  display: flex;
+}
+
+.search input {
+  background-color: white;
+  border: 0;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  font-size: 18px;
+  padding: 15px;
+  height: 30px;
+  width: 300px;
+  position: absolute;
+}
+
+.searchIcon {
+  height: 60px;
+  width: 50px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+.searchIcon svg {
+  font-size: 35px;
+}
+
+.suggestions {
+  border: solid black 1px;
+}
+
+.filter {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+.dataResult {
+  margin-top: 5px;
+  width: 500px;
+  height: fit-content;
+  max-height: 150px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataResult .dataItem {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.dataResult p {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.dataResult p:hover {
+  background-color: #dbdad5;
+  font-weight: bold;
+}
+
+#clearBtn {
+  cursor: pointer;
+}
+
+.search input {
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 2px;
+  font-size: 18px;
+  height: 30px;
+  width: 500px;
+}
+
+.searchIcon {
+  height: 60px;
+  width: 50px;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+.searchIcon svg {
+  font-size: 35px;
+}

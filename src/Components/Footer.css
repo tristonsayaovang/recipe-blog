@@ -1,0 +1,11 @@
+.social-media {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.social-media-icons {
+  width: 50px;
+  height: 50px;
+}
