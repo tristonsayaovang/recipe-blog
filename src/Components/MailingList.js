@@ -7,7 +7,7 @@ const MailingList = () =>{
     function sendEmail(e){
         e.preventDefault();
 
-        emailjs.sendForm('service_n6iloe7', 'template_33d1ffq', form.current, 'j2ccC8Ou1uuqSfEEM')
+        emailjs.sendForm(private info here)
           .then((result) => {
               console.log(result.text);
               alert('Successfully submitted');
